@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>胡同学</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<audio src="http://p2ffi5y85.bkt.clouddn.com/zgz.mp3" controls="controls" autoplay="autoplay" loop="loop"></audio>
+
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2018—02-05,</span><br />
+			<span class="space"/><span class="comments">*/</span><br />		 
+			<span class="comments">//如果说你是海上的烟火</span><br />
+			<span class="comments">//我是浪花的泡沫</span><br />
+			<span class="comments">//某一刻你的光照亮了我</span><br />
+			<span class="comments">//如果说你是遥远的星河</span><br />
+			<span class="comments">//耀眼得让人想哭</span><br />
+			<span class="comments">//我是追逐着你的眼眸</span><br />
+			<span class="comments">//总在孤单时候眺望夜空</span><br />
+			<span class="comments">//我可以跟在你身后</span><br />
+			<span class="comments">//像影子追着光梦游</span><br />
+			<span class="comments">//我可以等在这路口</span><br />
+			<span class="comments">//不管你会不会经过              </span><br/>
+			<span class="comments">//每当我为你抬起头              </span><br/>
+			<span class="comments">//连眼泪都觉得自由              </span><br/>
+			<span class="comments">//有的爱像阳光倾落边拥有边失去着</span><br/>
+			<span class="comments">//如果说你是夏夜的萤火          </span><br/>
+			<span class="comments">//孩子们为你唱歌                </span><br/>
+            <span class="comments">//那么我是想要画你的手          </span><br/>
+            <span class="comments">//你看我多么渺小一个我          </span><br/>
+            <span class="comments">//因为你有梦可做                </span><br/>
+            <span class="comments">//也许你不会为我停留            </span><br/>
+            <span class="comments">//那就让我站在你的背后          </span><br/>
+            <span class="comments">//我可以跟在你身后              </span><br/>
+            <span class="comments">//像影子追着光梦游              </span><br/>
+            <span class="comments">//我可以等在这路口              </span><br/>
+            <span class="comments">//不管你会不会经过              </span><br/>
+            <span class="comments">//每当我为你抬起头              </span><br/>
+            <span class="comments">//连眼泪都觉得自由              </span><br/>
+            <span class="comments">//有的爱像大雨滂沱却依然相信彩虹</span><br/>
+            <span class="comments">//我可以跟在你身后              </span><br/>
+            <span class="comments">//像影子追着光梦游              </span><br/>
+            <span class="comments">//我可以等在这路口              </span><br/>
+            <span class="comments">//不管你会不会经过              </span><br/>
+            <span class="comments">//每当我为你抬起头              </span><br/>
+            <span class="comments">//连眼泪都觉得自由              </span><br/>
+            <span class="comments">//有的爱像大雨滂沱却依然相信彩虹</span><br/>
+			
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					 
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					 <br/>
+					<div class="signature">-  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2015, 12, 7);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+</body>
+</html>
