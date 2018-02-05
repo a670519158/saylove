@@ -42,27 +42,27 @@
 			<span class="comments">//我可以等在这路口</span><br />
 			<span class="comments">//不管你会不会经过 </span><br/>
 			<span class="comments">//每当我为你抬起头</span><br/>
-			<span class="comments">//连眼泪都觉得自由       </span><br/>
+			<span class="comments">//连眼泪都觉得自由</span><br/>
 			<span class="comments">//有的爱像阳光倾落边拥有边失去着</span><br/>
-			<span class="comments">//如果说你是夏夜的萤火          </span><br/>
-			<span class="comments">//孩子们为你唱歌                </span><br/>
-            <span class="comments">//那么我是想要画你的手          </span><br/>
-            <span class="comments">//你看我多么渺小一个我          </span><br/>
-            <span class="comments">//因为你有梦可做                </span><br/>
-            <span class="comments">//也许你不会为我停留            </span><br/>
-            <span class="comments">//那就让我站在你的背后          </span><br/>
-            <span class="comments">//我可以跟在你身后              </span><br/>
-            <span class="comments">//像影子追着光梦游              </span><br/>
-            <span class="comments">//我可以等在这路口              </span><br/>
-            <span class="comments">//不管你会不会经过              </span><br/>
-            <span class="comments">//每当我为你抬起头              </span><br/>
-            <span class="comments">//连眼泪都觉得自由              </span><br/>
+			<span class="comments">//如果说你是夏夜的萤火</span><br/>
+			<span class="comments">//孩子们为你唱歌</span><br/>
+            <span class="comments">//那么我是想要画你的手</span><br/>
+            <span class="comments">//你看我多么渺小一个我</span><br/>
+            <span class="comments">//因为你有梦可做</span><br/>
+            <span class="comments">//也许你不会为我停留</span><br/>
+            <span class="comments">//那就让我站在你的背后</span><br/>
+            <span class="comments">//我可以跟在你身后</span><br/>
+            <span class="comments">//像影子追着光梦游</span><br/>
+            <span class="comments">//我可以等在这路口</span><br/>
+            <span class="comments">//不管你会不会经过</span><br/>
+            <span class="comments">//每当我为你抬起头</span><br/>
+            <span class="comments">//连眼泪都觉得自由</span><br/>
             <span class="comments">//有的爱像大雨滂沱却依然相信彩虹</span><br/>
 			
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
-			<div id="words">
+			<div id="words" style="display:none">
 				<div id="messages">
 					 
 					<div id="elapseClock"></div>
@@ -77,6 +77,7 @@
 </div>
 
 <script type="text/javascript">
+$("#code").hide();
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
 var together = new Date();
@@ -106,7 +107,12 @@ if (!document.createElement('canvas').getContext) {
 	}, 500);
 
 	adjustCodePosition();
-	$("#code").typewriter();
+	setTimeout(function () {
+		$("#code").show();
+		$("#code").typewriter();
+		$("#garden").css("margin-left","-66%");
+	}, 22000);
+	
 }
 </script>
 

@@ -2,7 +2,7 @@
     margin:0;padding:0;
     /*background:#ffe;*/
     background-image: url(../images/beijin2.jpg);
-    background-size: 100% 120%;
+    background-size: 100% 100%;
     font-size:12px;
     overflow:auto;
 	background-repeat: no-repeat;
@@ -12,7 +12,7 @@ html{
 }
 #mainDiv{width:100%;height:100%}
 #loveHeart{float:left;width:670px;height:625px}
-#garden{width:100%;height:100%}
+#garden{width:45%;height:60%;}
 #elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
 #words{font-family:"sans-serif";width:500px;font-size:24px;color:#666}
 #messages{display:none}
@@ -24,7 +24,7 @@ html{
 #code .string{color:#2a36ff}
 #code .keyword{color:#7f0055;font-size:20px}
 #code .placeholder{margin-left:15px}#code .space{margin-left:7px}
-#code .comments{color:#3f7f5f;font-size:20px}
+#code .comments{color:#3f7f5f;font-size:14px}
 #copyright{margin-top:10px;text-align:center;width:100%;color:#666}
 #errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
 #copyright a{color:#666}
