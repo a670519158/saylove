@@ -4,7 +4,8 @@
     background-image: url(../images/beijin2.jpg);
     background-size: 100% 120%;
     font-size:12px;
-    overflow:auto
+    overflow:auto;
+	background-repeat: no-repeat;
 }
 html{
     height: 100% ;
